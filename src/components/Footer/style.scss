@@ -1,0 +1,44 @@
+.footer{
+    height: 200px;
+    background: #111111;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    &-navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &-nav{
+        display: flex;
+        flex-direction: row;
+        align-self: end;
+        list-style: none;
+        margin: 0;
+        &-item{
+            color: whitesmoke;
+            
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+        }
+    }
+    &-img{
+        max-width: 250px;
+    }
+    &-tel{
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+        &-item{
+            color: whitesmoke;
+        }
+    }
+
+
+}

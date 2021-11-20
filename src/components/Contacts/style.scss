@@ -1,0 +1,31 @@
+.contacts{
+
+    background: #F3F3F3;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 90px 0 90px 0;
+    }
+    &-map{
+        width: 684px;
+        height: 320px;
+        border: 1px solid var(--grey-color);
+    }
+    &-tel{
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.04em;
+        color: var(--grey-color);
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        
+    }
+    &-img{
+        margin-right: 20px;
+    }
+    &-header{
+        margin-bottom: 65px;
+    }
+
+}

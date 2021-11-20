@@ -1,0 +1,14 @@
+.about{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    &-text{
+        width: 33%;
+        margin-top: var(--header-margin);
+    }
+    &-p{
+        color: var(--grey-color);
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

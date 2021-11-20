@@ -1,0 +1,18 @@
+[
+    {
+        "phrase": "Власний цех по ремонту",
+        "src": "./images/factory.svg"
+    },
+    {
+        "phrase": "Ремонт за 1 день",
+        "src": "./images/repair.svg"
+    },
+    {
+        "phrase": "Гарантія 2 роки",
+        "src": "./images/varranty.svg"
+    },
+    {
+        "phrase": "Встановлюємо причину поломки",
+        "src": "./images/cause.svg"
+    }
+]

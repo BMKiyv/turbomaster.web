@@ -1,0 +1,35 @@
+.first{
+    &-wrap{
+        height: 100vh;
+        background-color: aquamarine;
+        background: linear-gradient(90deg, #201D1D 10%, rgba(32, 29, 29, 0) 35%),linear-gradient(180deg, #201D1D 12%, rgba(32, 29, 29, 0) 70%),url('../../img/gears.png');
+        background-size: cover;
+    }
+    &-headers{
+        width:60%;
+        margin-top: 110px;
+    }
+    &-header{
+        color:var(--white-color);
+        font-family: PT Sans Narrow;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 80px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+    &-span{
+        display: inline-block;
+        width: 100%;
+        font-family: PT Sans Narrow;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 80px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--grey-color);
+    }
+  
+}

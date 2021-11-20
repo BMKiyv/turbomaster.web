@@ -1,0 +1,25 @@
+@import './fonts.scss';
+@import './variables.scss';
+
+body{
+  font-family: 'PT Sans Narrow','Oswald';
+  padding:0px;
+  margin: 0px;
+}
+
+h2{
+  text-align: left;
+  font-family: PT Sans Narrow;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 64px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+margin: 0px;
+}
+
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+}

@@ -1,0 +1,16 @@
+.button{
+    width: 220px;
+    display: inline-block;
+    background: var(--red-color);
+    height: 60px;
+    font-family: 'PT Sans Narrow';
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    &-wrap{
+        display: block;
+    }
+}
