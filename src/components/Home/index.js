@@ -5,6 +5,7 @@ import Contacts from '../Contacts/index';
 import Footer from '../Footer/index';
 import WhyWe from '../WhyWE/index';
 import AboutUs from '../AboutUs';
+import PhotoGalerry from '../Photogalerry';
 
 
   const Home = () => {
@@ -14,6 +15,7 @@ import AboutUs from '../AboutUs';
         <WhyWe />
         <Offer />
         <AboutUs />
+        <PhotoGalerry />
         <Contacts />
         <Footer />
       </div>

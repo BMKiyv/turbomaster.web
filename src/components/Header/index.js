@@ -11,7 +11,7 @@ const Header = () => {
                 <HashLink to ='/#whywe' smooth className = 'header-list-item'>Чому ми</HashLink>
                 <HashLink to ='/#offer' smooth className = 'header-list-item'>Ми пропонуємо</HashLink>
                 <HashLink to ='/#about' smooth className = 'header-list-item'>Хто ми</HashLink>
-                <li className = 'header-list-item'>галерея</li>
+                <HashLink to = '/#gallery' smooth className = 'header-list-item'>галерея</HashLink>
                 <HashLink to = '/#contacts' smooth className = {'header-list-item'}>Контакти</HashLink>
             </ul>
             <div className = 'header-phones'>
