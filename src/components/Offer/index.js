@@ -35,6 +35,16 @@ const Offer = () => {
                 setTitle(item.phrase)
                 console.log(title);
             }
+            const addingClasses=() => {
+                return {
+                    "backgroundImage":`url(./images/turbins${index+1}.png)`,
+                    'width': '612px',
+                    'height': '366px',
+                    'backgroundSize': 'contain',
+                    'backgroundRepeat': 'no-repeat'
+                }
+
+            }
             const handlingList = (list,i) => {
                 return(
                     <li className = 'offer-list-li' key = {i}><span className = 'offer-list-item'>{list}</span></li>
@@ -42,13 +52,16 @@ const Offer = () => {
             } 
             return (
                 <div key = {index} className = 'offer-wrap'>
-                    <img className = 'offer-img' src = {item.src} alt = {item.src} />
+                    <div style = {addingClasses()}>
                     <h3 className = 'offer-header'>{item.phrase}</h3>
                     <ul className = 'offer-list'>{item.list.map(handlingList)}</ul>
                     <div className = 'offer-button' onClick = {theTitle}>
                         <Button onClick = {renderForm} />
                         <span className = 'offer-button-span'>от 2500 грн.</span>
                     </div>
+                    </div>
+                    {/* <img className = 'offer-img' src = {item.src} alt = {item.src} /> */}
+
                 </div>
             )
         }
