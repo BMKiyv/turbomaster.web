@@ -14,6 +14,7 @@ const Header = () => {
                 <HashLink to = '/#gallery' smooth className = 'header-list-item'>галерея</HashLink>
                 <HashLink to = '/#contacts' smooth className = {'header-list-item'}>Контакти</HashLink>
             </ul>
+           
             <div className = 'header-phones'>
                 <a href = 'tel:+380676481631' className = 'header-phone'>067 648-16-31</a>
                 <a href = 'tel:+380503751785' className = 'header-phone'>050 375-17-85</a>

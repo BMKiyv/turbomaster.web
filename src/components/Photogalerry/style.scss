@@ -64,4 +64,17 @@
 }
 .slick-dots li.slick-active > button{
     background: var(--red-color);
+    &:hover{
+        box-shadow: 0 7px 20px #e8363a;
+    }
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: var(--white-color);
+    outline: none;
+    background: var(--red-color);
+    box-shadow: 0 7px 20px #e8363a;
 }

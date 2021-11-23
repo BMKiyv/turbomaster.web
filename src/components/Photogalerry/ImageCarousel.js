@@ -12,7 +12,7 @@ export default function ImageCarousel({ images }) {
     slidesToScroll: 1,
     lazyLoad: true
   };
-  console.log(images);
+  //console.log(images);
   return (
     <div>
       <Slider {...settings}>

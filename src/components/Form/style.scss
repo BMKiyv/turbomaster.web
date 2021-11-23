@@ -1,0 +1,59 @@
+.form{
+    right: 0px;
+    position: absolute;
+    top: 130px;
+    background: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    max-width: 388px;
+    @media (max-width:767px){
+        top: 467px;
+    }
+    &-modal{
+        right: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(50%,-50%);
+        background: var( --white-color);
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        max-width: 388px;
+    }
+    &-header{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &-label{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-named{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    &-input{
+        height: 48px;
+        width: 318px;
+        background: #F8F8F8;
+        border: 1px solid #D4D4D4;
+        box-sizing: border-box;
+    }
+    &-area{
+        width: 318px;
+        height: 90px;
+        margin-bottom: 20px;
+        background: #F8F8F8;
+        border: 1px solid #D4D4D4;
+        box-sizing: border-box;
+    }
+    &-button{
+        width: 318px;
+    }
+}

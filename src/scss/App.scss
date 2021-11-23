@@ -5,6 +5,7 @@ body{
   font-family: 'PT Sans Narrow','Oswald';
   padding:0px;
   margin: 0px;
+  display: block;
 }
 
 h2{
@@ -17,9 +18,21 @@ line-height: 64px;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 margin: 0px;
+@media (max-width:767px){
+  text-align: center;
+}
 }
 
 .container{
   max-width: 1240px;
   margin: 0 auto;
+  @media (max-width:767px) {
+    max-width: 344px;
+  }
+}
+.container.first-position{
+  @media (max-width:767px){
+    margin:0;
+    padding-left: calc((100% - 344px)/2);
+  }
 }

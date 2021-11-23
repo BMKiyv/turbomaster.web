@@ -18,6 +18,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: 20px;
+        @media (max-width:767px){
+            display: none;
+        }
     }
     &-phone{
         color: var(--white-color);
@@ -33,6 +37,9 @@
     }
     &-list{
         display: flex;
+        @media (max-width:767px){
+            display: none;
+        }
         
         &-item{
             list-style-type: none; 
