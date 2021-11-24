@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className = 'footer'>
             <div className = 'container footer-wrap'>
-                <Header />
+                <Header fromFooter/>
             </div>
         </div>
 

@@ -29,6 +29,10 @@
         line-height: 40px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
+        @media (max-width:767px){
+            top: 0;
+            left: var(--mobile);
+        }
 
     }
     &-h2{
@@ -41,6 +45,10 @@
         bottom: 40px;
         display: flex;
         align-items: center;
+        @media (max-width:767px){
+            bottom: 25px;
+            left: var(--mobile);
+        }
         &-span{
             color: var(--white-color);
             margin-left: 30px;
@@ -56,6 +64,11 @@
         top: 120px;
         list-style-type: square;
         width: 75%;
+        @media (max-width:767px){
+            top:75px;
+            left: calc((100vw - 344px)/4);
+       
+        }
         &-item{
             color: var(--white-color);
             font-size: 16px;

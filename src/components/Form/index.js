@@ -144,14 +144,14 @@ const renderModal = () =>{
         <div className = {fromModal?'form-modal':'form'} id = 'form'>
             <div className = 'form-header'><span>{title?title:'Дізнатися ціну'}</span></div>
             <label className = 'form-label'>
-                <span className = 'form-named'>NAME</span>
+                <span className = 'form-named'>Ім`я</span>
                 <input className = 'form-input' name = 'name' type = 'text' onChange={onChange} value={formData.name}/>
             </label>
             <label className = 'form-label'>
-                <span className = 'form-named'>Phone</span>
+                <span className = 'form-named'>Телефон</span>
                 <input className = 'form-input' name = 'phone' type = 'text' onChange={onChange} value={formData.phone}/>
             </label>
-            <span className = 'form-named'>Your Comment</span>
+            <span className = 'form-named'>Ваш коментар</span>
             <textarea className = 'form-area' type='text' name='comment' onChange={onChange} value={formData.comment}></textarea>
             <div className = 'form-button'>
                 <Button submit = {submit} disabling = {disabling} onClick={sendMail}/>

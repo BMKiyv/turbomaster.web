@@ -10,8 +10,8 @@ const First = () => {
                 <Header />
                 <div className = 'first-headers'>                
                 <h1 className = 'first-header'>
-                    <span className = 'first-span'>Научно-технические предприятия</span>
-                    по ремонту и продаже турбокомпрессоров
+                    <span className = 'first-span'>Науково-технічні підприємства</span>
+                    по ремонту та продажу турбокомпресорів
                 </h1>
                 </div>
                 <Form />

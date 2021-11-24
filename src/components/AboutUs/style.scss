@@ -1,14 +1,25 @@
 .about{
     display: flex;
+    flex-direction: row;
     margin-top: 100px;
     justify-content: space-between;
+    @media (max-width:767px){
+        flex-direction: column;
+        background-color: #F3F3F3;
+    }
     &-text{
         width: 33%;
         margin-top: var(--header-margin);
+        @media (max-width:767px){
+            width:100%
+        }
     }
     &-p{
         color: var(--grey-color);
         font-size: 18px;
         line-height: 30px;
+        @media (max-width:767px){
+            padding-left: var(--mobile);
+        }
     }
 }

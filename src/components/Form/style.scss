@@ -9,6 +9,7 @@
     max-width: 388px;
     @media (max-width:767px){
         top: 467px;
+        display: block;
     }
     &-modal{
         right: 50%;

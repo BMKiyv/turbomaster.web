@@ -12,7 +12,7 @@ const AboutUs = () => {
                 <p className = 'about-p'>Великий склад нових турбокомпресорів, б / у і після реставрації, а також комплектуючих до них (картриджі, актуатори, сервоприводу, ремкомплекти).</p>
             </div>
             <div>
-                <img src = './images/details.png' alt = 'about us'/>
+                <img src = './images/details.png' style = {{'width': '100%'}} alt = 'about us'/>
             </div>
             </div>
         </div>

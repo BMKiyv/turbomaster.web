@@ -36,11 +36,16 @@ const Offer = () => {
                 console.log(title);
             }
             const addingClasses=() => {
+                console.log(window.innerWidth);
+                let theWidth = window.innerWidth>767? '612px':'100vw';
+                let theHeight = window.innerWidth>767? '366px':'343px';
+                let theSize = window.innerWidth>767? 'contain':'cover';
+                console.log(theWidth,theHeight);
                 return {
                     "backgroundImage":`url(./images/turbins${index+1}.png)`,
-                    'width': '612px',
-                    'height': '366px',
-                    'backgroundSize': 'contain',
+                    'width':theWidth,
+                    'height': theHeight,
+                    'backgroundSize': theSize ,
                     'backgroundRepeat': 'no-repeat'
                 }
 
