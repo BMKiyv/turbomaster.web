@@ -14,7 +14,7 @@ $message = "
 Ви отримали листа від нового клієнта. <br>
 Ім`я: ".htmlspecialchars($name)."<br>
 Телефон: ".htmlspecialchars($phone)."<br>
-Комментарий:".htmlspecialchars($comment);
+Коментар:".htmlspecialchars($comment);
 
 $headers = "From: $mail\r\nContent-type: text/html; charset=utf-8\r\n";
 mail($to, $subject, $message, $headers);
