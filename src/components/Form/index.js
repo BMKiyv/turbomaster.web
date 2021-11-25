@@ -119,7 +119,7 @@ let sendMail = (event) =>{
 const renderModal = () =>{
     if(sent && !error){
     return (
-        <Modal isModal fromModal = {fromModal}>
+        <Modal isModal fromModal = {fromModal}onClose = {fromModal?null:closeModal}>
             <GeneralModal success>
                 <SendingDone>
                     <Button to='/#home' message='Закрити' onClick={closeModal} />
