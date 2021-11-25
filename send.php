@@ -7,7 +7,7 @@ $mail = $_POST["email"];
 $service = $_POST["service"];
 $comment = $_POST["comment"];
 
-$to = "info@yerchenko.com";
+$to = "k1brusenets@gmail.com";
 
 $subject = "Заявка з сайта";
 $message = "
