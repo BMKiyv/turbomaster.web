@@ -28,6 +28,9 @@
         flex-direction: column;
         padding: 40px;
         max-width: 388px;
+        @media (min-width:768px) and (max-width:1023px){
+            max-width: 450px;
+        }
     }
     &-header{
         font-weight: bold;

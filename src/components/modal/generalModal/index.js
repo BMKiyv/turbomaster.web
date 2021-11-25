@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
 
 const GeneralModal = ({children, onClose, success, img }) => {
-    let width = window.innerWidth>550? null:window.innerWidth;
+    const [styled, setStyled] = useState(350)
+    useEffect(()=>setStyled(window.innerWidth),[])
+    let width = styled>550? null:window.innerWidth;
+    console.log(styled);
     return (
         <div className = 'generalModal' >
                 <div className={onClose?'generalModal__fromModal':'generalModal__container'}>
