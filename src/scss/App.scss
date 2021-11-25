@@ -36,7 +36,12 @@ margin: 0px;
     max-width: 100%;
     margin: 0;
   }
+  @media (min-width:1024px) and (max-width:1250px){
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
+
 // .container.first-position{
 //   @media (max-width:767px){
 //     margin:0;

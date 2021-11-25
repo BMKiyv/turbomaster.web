@@ -64,7 +64,7 @@ else {
      setDisabling(true)
 }},[formData])
 
-console.log(formData);
+//console.log(formData);
 
 const resetInput = () => {
     setFormData({
@@ -91,7 +91,7 @@ let sendMail = (event) =>{
             phone:newData.phone,
             comment:newData.comment
         }
-        console.log(dataForSend,'ready for sending');
+        //console.log(dataForSend,'ready for sending');
           event.preventDefault();
         return  axios.post("https://turbomaster.if.ua/send.php", dataForSend)
         .then(res => {

@@ -6,7 +6,7 @@ const GeneralModal = ({children, onClose, success, img }) => {
     const [styled, setStyled] = useState(350)
     useEffect(()=>setStyled(window.innerWidth),[])
     let width = styled>550? null:window.innerWidth;
-    console.log(styled);
+    //console.log(styled);
     return (
         <div className = 'generalModal' >
                 <div className={onClose?'generalModal__fromModal':'generalModal__container'}>

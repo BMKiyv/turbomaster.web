@@ -11,7 +11,7 @@ const Offer = () => {
     const [title,setTitle] = useState('')
     const renderForm = () => {
         setIsModal(true)
-        console.log('clicked',isModal);
+        //console.log('clicked',isModal);
 
     }
     const closeModal = () => {
@@ -33,13 +33,13 @@ const Offer = () => {
         const handlingRender = (item,index) => {
             const theTitle = () => {
                 setTitle(item.phrase)
-                console.log(title);
+                //console.log(title);
             }
             const addingClasses=() => {
-                console.log(window.innerWidth);
-                let theWidth = window.innerWidth>1024? '612px':'100vw';
+                //console.log(window.innerWidth);
+                let theWidth = window.innerWidth>1024? window.innerWidth>1250?'612px':'470px':'100vw';
                 let theHeight = window.innerWidth>1024? '366px':'343px';
-                console.log(theWidth,theHeight);
+                //console.log(theWidth,theHeight);
                 return {
                     "backgroundImage":`url(./images/turbins${index+1}.png)`,
                     'width':theWidth,

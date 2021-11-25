@@ -14,7 +14,7 @@ export default function ImageCarousel({ images }) {
     lazyLoad: true,
     responsive: [
       {
-        breakpoint: 1023,
+        breakpoint: 1249,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
