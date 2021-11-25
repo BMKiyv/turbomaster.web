@@ -7,7 +7,7 @@
         @media (max-width:767px){
             width: 344px;
             height: 344px;
-            padding: 0;
+            padding: 0 var(--mobile);
         }
     }
     &-header{
@@ -15,6 +15,7 @@
     }
 }
 .slick-prev {
+    //position: relative;
     left: 2px;
     height: 80px;
     width: 80px;
@@ -27,6 +28,7 @@
     }
 }
 .slick-next {
+    //position: relative;
     right: 0px;
     width: 80px;
     height: 80px;
@@ -39,12 +41,19 @@
 }
 .slick-list{
     margin: 0 -8px;
+    @media (max-width:1023px){
+        margin: 0;
+    }
 }
 .slick-dots li button:before {
     content: "";
 }
 .slick-dots{
-    bottom: -38px;
+    bottom: -27px;
+    position: relative;
+    @media (max-width:767px){
+        bottom: 0px;
+    }
     & li button{
         display: block;
         width: 85px;

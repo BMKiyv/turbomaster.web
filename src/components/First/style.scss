@@ -3,16 +3,27 @@
         position: relative;
     }
     &-wrap{
-        height: 700px;
+        height: 650px;
         background-color: aquamarine;
-        background: linear-gradient(90deg, #201D1D 5%, rgba(32, 29, 29, 0) 25%),linear-gradient(180deg, #201D1D 12%, rgba(32, 29, 29, 0) 70%),url('../../img/gears.png');
+        background: linear-gradient(90deg, #201D1D 2%, rgba(32, 29, 29, 0) 33%),linear-gradient(180deg, #201D1D 4%, rgba(32, 29, 29, 0) 70%),url('../../img/gears.png');
         background-size: cover;
+        @media (max-width:767px){
+            background-position: center, center,-618px -16px;
+        }
+        @media (min-width:768px) and (max-width:1023px){
+            height: 650px;
+        }
     }
     &-headers{
         width:60%;
-        margin-top: 110px;
+        margin-top: 112px;
         @media (max-width:767px){
             width: 100%;
+        }
+        @media (min-width:768px) and (max-width:1023px){
+            width: 100%;
+            margin-top: 80px;
+            text-align: center;
         }
     }
     &-header{

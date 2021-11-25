@@ -3,10 +3,10 @@
     background: white;
     min-height: 438px;
     @media (min-width:768px){
-        padding: 20px;
-    }
-    @media (min-width:768px){
         padding: 40px;
+    }
+    @media (min-width:1024px){
+        padding: 55px;
     }
     &-title{
         font-size: 50px;

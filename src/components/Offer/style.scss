@@ -21,7 +21,6 @@
     &-header{
         color: var(--white-color);
         position: absolute;
-        top: 40px;
         left: 40px;
         font-style: normal;
         font-weight: normal;
@@ -61,7 +60,7 @@
         position: absolute;
         left: 20px;
         /* bottom: 85px; */
-        top: 120px;
+        top: 102px;
         list-style-type: square;
         width: 75%;
         @media (max-width:767px){
@@ -76,6 +75,7 @@
         }
         &-li{
             color: var(--red-color);
+            margin-bottom: 4px;
         }
     }
 }

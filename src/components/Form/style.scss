@@ -1,15 +1,22 @@
 .form{
     right: 0px;
     position: absolute;
-    top: 130px;
-    background: var(--white-color);
+    top: 126px;
+    background:  #FFFFFF;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 35px;
     max-width: 388px;
     @media (max-width:767px){
-        top: 467px;
+        top: 428px;
         display: block;
+    }
+    @media (min-width:768px) and (max-width:1023px){
+        top: 450px;
+        left: calc((100% - 500px)/2);
+        max-width: 450px;
+        padding: 45px;
+        background: #F3F3F3;
     }
     &-modal{
         right: 50%;
@@ -45,6 +52,10 @@
         background: #F8F8F8;
         border: 1px solid #D4D4D4;
         box-sizing: border-box;
+        padding-left: 15px;
+        @media (min-width:768px) and (max-width:1023px){
+            width: 450px;
+        }
     }
     &-area{
         width: 318px;
@@ -53,8 +64,15 @@
         background: #F8F8F8;
         border: 1px solid #D4D4D4;
         box-sizing: border-box;
+        padding: 15px;
+        @media (min-width:768px) and (max-width:1023px){
+            width: 450px;
+        }
     }
     &-button{
         width: 318px;
+        @media (min-width:768px) and (max-width:1023px){
+            width: 450px;
+        }
     }
 }

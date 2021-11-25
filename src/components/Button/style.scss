@@ -23,4 +23,8 @@
     &:hover{
         box-shadow: 0 7px 20px #e8363a;
     }
+    &-disabled{
+        opacity:0.7;
+        box-shadow:none
+    }
 }

@@ -64,7 +64,7 @@ else {
      setDisabling(true)
 }},[formData])
 
-//console.log(formData);
+console.log(formData);
 
 const resetInput = () => {
     setFormData({
@@ -144,15 +144,15 @@ const renderModal = () =>{
         <div className = {fromModal?'form-modal':'form'} id = 'form'>
             <div className = 'form-header'><span>{title?title:'Дізнатися ціну'}</span></div>
             <label className = 'form-label'>
-                <span className = 'form-named'>Ім`я</span>
-                <input className = 'form-input' name = 'name' type = 'text' onChange={onChange} value={formData.name}/>
+                <span className = 'form-named'>{formData.nameInvalid?<span style = {{'color':'#E8363A'}}>{formData.nameInvalid}</span>:'Ім`я'}</span>
+                <input className = 'form-input' name = 'name' type = 'text' onChange={onChange} placeholder='Ім`я' value={formData.name}/>
             </label>
             <label className = 'form-label'>
                 <span className = 'form-named'>Телефон</span>
-                <input className = 'form-input' name = 'phone' type = 'text' onChange={onChange} value={formData.phone}/>
+                <input className = 'form-input' name = 'phone' type = 'text' placeholder='+xx(xxx)xxx xx xx' onChange={onChange} value={formData.phone}/>
             </label>
             <span className = 'form-named'>Ваш коментар</span>
-            <textarea className = 'form-area' type='text' name='comment' onChange={onChange} value={formData.comment}></textarea>
+            <textarea className = 'form-area' type='text' name='comment' placeholder='Ваш коментар' onChange={onChange} value={formData.comment}></textarea>
             <div className = 'form-button'>
                 <Button submit = {submit} disabling = {disabling} onClick={sendMail}/>
             </div>

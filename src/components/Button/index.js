@@ -6,12 +6,12 @@ const Button = ({message, submit, disabling, onClick, nav}) => {
     
     return (nav?
         <div className = 'button-wrap'>
-            <HashLink to = '/#main' className = 'button' onClick={onClick}>{message}</HashLink>
+            <HashLink to = '/#form' className = 'button button-link' onClick={onClick}>{message}</HashLink>
         </div>
         :
         <div className = 'button-wrap'>{
             <button
-             className = 'button'
+             className = {disabling?'button button-disabled':'button'}
              submit={submit? 'submit':null} 
              disabled={disabling?'disabled':null}
              onClick={onClick}
