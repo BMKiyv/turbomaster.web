@@ -1,37 +1,37 @@
 [
     {
         "id": 0,
-        "src": "./images/actuator.jpg",
+        "src": "./images/carousel1.jpg",
         "alt": "dog1"
 
     },
     {
         "id": 1,
-        "src": "./images/actuator2.jpg",
+        "src": "./images/carousel2.jpg",
         "alt": "dog2"
 
     },
     {
         "id": 2,
-        "src": "./images/cartrige.jpg",
+        "src": "./images/carousel3.jpg",
         "alt": "dog3"
 
     },
     {
         "id": 3,
-        "src": "./images/servoprivod.jpg",
+        "src": "./images/carousel4.jpg",
         "alt": "dog4"
 
     },
     {
         "id": 4,
-        "src": "./images/servoprivod3.jpg",
+        "src": "./images/carousel5.jpg",
         "alt": "dog5"
 
     },
     {
         "id": 5,
-        "src": "./images/turbomers.jpg",
+        "src": "./images/carousel6.jpg",
         "alt": "dog6"
 
     }

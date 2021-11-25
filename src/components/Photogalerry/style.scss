@@ -15,6 +15,12 @@
             height: 344px;
             padding: 0 var(--mobile);
         }
+        @media (min-width:768px) and (max-width:1023px){
+            width: 368px;
+        } 
+        @media (min-width:1024px) and (max-width:1249px){
+            width: 490px;
+        } 
     }
     &-header{
         margin-bottom: 40px;
