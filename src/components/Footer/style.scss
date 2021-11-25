@@ -1,6 +1,9 @@
 .footer{
-    height: 200px;
+    height: 160px;
     background: #111111;
+    @media (max-width:767px){
+        height: 230px;
+    }
     &-wrap{
         display: flex;
         justify-content: space-between;

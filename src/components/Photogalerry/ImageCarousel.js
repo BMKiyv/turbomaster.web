@@ -5,14 +5,33 @@ import './style.scss';
 
 export default function ImageCarousel({ images }) {
   const settings = {
+    className :'carousel-slick',
     infinite: true,
     dots: true,
-    slidesToShow: 3,
+    slidesToShow:3,
     arrows: true,
     slidesToScroll: 1,
-    lazyLoad: true
+    lazyLoad: true,
+    responsive: [
+      {
+        breakpoint: 1249,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows:false
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows:false
+        }
+      }
+    ]
   };
-  console.log(images);
+  
   return (
     <div>
       <Slider {...settings}>

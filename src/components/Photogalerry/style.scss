@@ -1,15 +1,27 @@
 .carousel{
     padding: 90px 0 150px 0;
+    @media (max-width:767px){
+        padding: 50px 0 150px 0;
+    }
+    @media (min-width:768px) and (max-width:1023px){
+        padding: 64px 0 150px 0;
+    }
     &-photo{
         width:400px;
         height: 400px;
         padding: 0 10px;
+        @media (max-width:767px){
+            width: 344px;
+            height: 344px;
+            padding: 0 var(--mobile);
+        }
     }
     &-header{
         margin-bottom: 40px;
     }
 }
 .slick-prev {
+    //position: relative;
     left: 2px;
     height: 80px;
     width: 80px;
@@ -22,6 +34,7 @@
     }
 }
 .slick-next {
+    //position: relative;
     right: 0px;
     width: 80px;
     height: 80px;
@@ -34,12 +47,19 @@
 }
 .slick-list{
     margin: 0 -8px;
+    @media (max-width:1023px){
+        margin: 0;
+    }
 }
 .slick-dots li button:before {
     content: "";
 }
 .slick-dots{
-    bottom: -38px;
+    bottom: -27px;
+    position: relative;
+    @media (max-width:767px){
+        bottom: 0px;
+    }
     & li button{
         display: block;
         width: 85px;
@@ -64,4 +84,17 @@
 }
 .slick-dots li.slick-active > button{
     background: var(--red-color);
+    &:hover{
+        box-shadow: 0 7px 20px #e8363a;
+    }
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: var(--white-color);
+    outline: none;
+    background: var(--red-color);
+    box-shadow: 0 7px 20px #e8363a;
 }

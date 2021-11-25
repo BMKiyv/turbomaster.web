@@ -1,0 +1,81 @@
+.form{
+    right: 0px;
+    position: absolute;
+    top: 126px;
+    background:  #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    max-width: 388px;
+    @media (max-width:767px){
+        top: 428px;
+        display: block;
+    }
+    @media (min-width:768px) and (max-width:1023px){
+        top: 433px;
+        left: calc((100% - 500px)/2);
+        max-width: 450px;
+        padding: 45px;
+        background: #F3F3F3;
+    }
+    &-modal{
+        right: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(50%,-50%);
+        background: var( --white-color);
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        max-width: 388px;
+        @media (min-width:768px) and (max-width:1023px){
+            max-width: 450px;
+        }
+    }
+    &-header{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &-label{
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-named{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    &-input{
+        height: 48px;
+        width: 318px;
+        background: #F8F8F8;
+        border: 1px solid #D4D4D4;
+        box-sizing: border-box;
+        padding-left: 15px;
+        @media (min-width:768px) and (max-width:1023px){
+            width: 450px;
+        }
+    }
+    &-area{
+        width: 318px;
+        height: 90px;
+        margin-bottom: 20px;
+        background: #F8F8F8;
+        border: 1px solid #D4D4D4;
+        box-sizing: border-box;
+        padding: 15px;
+        @media (min-width:768px) and (max-width:1023px){
+            width: 450px;
+        }
+    }
+    &-button{
+        width: 318px;
+        @media (min-width:768px) and (max-width:1023px){
+            width: 450px;
+        }
+    }
+}

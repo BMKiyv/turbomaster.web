@@ -1,21 +1,85 @@
 .whywe{
     padding: 100px 0;
+    @media (max-width:767px){
+        padding: 255px 0 0 0;
+    }
+     @media (min-width:768px) and (max-width:1023px){
+        padding: 365px 0 0 0;
+    }
     &-list{
         display: flex;
-        width: 100%;
-        margin-top: var(--header-margin);
+        //width: 100%;
+        flex-direction: row;
+        margin: var(--header-margin) 0 0 0;
+        @media (max-width:767px){
+            flex-direction: column;
+            margin: 0 0 0 var(--mobile);
+        }
+         @media (min-width:768px) and (max-width:1023px){
+            flex-wrap: wrap;
+            padding: 0 calc((100% - 728px)/2);
+         }
+         @media (min-width:1024px) and (max-width:1250px){
+             flex-wrap: wrap;
+         }
     }
     &-card{
         background: #F3F3F3;
-        padding: 75px 55px 10px;
+        padding: 69px 84px 0px;
         margin-right: 15px;
+        margin-bottom: 0px;
         width: 298px;
         &:nth-child(4n){
             margin-right: 0;
+            padding: 69px 49px 0px;
+            @media (max-width:767px){
+                padding: 60px 30px 10px;
+            }
+            @media (min-width:768px) and (max-width:1023px){
+                padding: 69px 57px 0px;
+            }
+            @media (min-width:1024px) and (max-width:1250px){
+                padding: 69px 84px 0px;
+            }
         }
+        &:nth-child(2n){
+            @media (min-width:768px) and (max-width:1023px){
+                margin-right: 0;
+            }
+        }
+        &:first-of-type{
+            padding: 69px 0px 0;
+            min-width: 298px;
+            @media (max-width:767px){
+                padding: 60px 30px 10px;
+                min-width: 270px;
+            }
+            @media (min-width:768px) and (max-width:1023px){
+                min-width: 239px;
+                padding: 69px 57px 0px;
+            }
+            @media (min-width:1024px) and (max-width:1250px){
+                padding: 69px 84px 0px;
+            }
+        }
+        @media (max-width:767px){
+            padding: 60px 30px 10px;
+            margin-right: 0px;
+            margin-bottom: 15px;
+            width: 275px;
+        }
+        @media (min-width:768px) and (max-width:1023px){
+            margin-right: 15px;
+            margin-bottom: 15px;
+            width: 239px;
+            padding: 69px 57px 0px;
+        }
+         @media (min-width:1024px) and (max-width:1250px){
+            margin-bottom: 15px;
+         }
     }
     &-figure{
-        max-width:96px;
+        max-width:87px;
         margin: 0 auto;
     }
     &-img{

@@ -11,6 +11,11 @@
       "src": "logo.png",
       "type": "image/png",
       "sizes": "20x6"
+    },
+    {
+      "src": "ilogo.png",
+      "type": "image/png",
+      "sizes": "64x64"
     }
   ],
   "start_url": ".",
