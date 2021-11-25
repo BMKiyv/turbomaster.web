@@ -72,7 +72,7 @@ const Offer = () => {
         return imagesTitles.map(handlingRender)
     }
     return (
-        <div className = 'container' id = 'offer'>
+        <div className = 'container offer-top' id = 'offer'>
             <h2>Ми пропонуємо</h2>
             <div className = 'offer'>
                 {renderOffer()}

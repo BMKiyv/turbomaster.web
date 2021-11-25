@@ -1,5 +1,11 @@
 .carousel{
     padding: 90px 0 150px 0;
+    @media (max-width:767px){
+        padding: 50px 0 150px 0;
+    }
+    @media (min-width:768px) and (max-width:1023px){
+        padding: 64px 0 150px 0;
+    }
     &-photo{
         width:400px;
         height: 400px;

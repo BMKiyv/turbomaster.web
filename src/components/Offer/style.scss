@@ -4,14 +4,26 @@
     flex-direction: row;
     align-content: stretch;
     margin-top: var(--header-margin);
+            @media (max-width:767px){
+                margin-top: 0;
+            }
+    &-top{
+        @media (max-width:767px){
+            padding-top: 30px;
+        }
+        @media (min-width:768px) and (max-width:1024px){
+            padding-top: 80px;
+        }
+    }
     &-wrap{
-        //width: 50%;
         position: relative;
-        //flex: 1 1 auto;
         margin-right: 15px;
         margin-bottom: 15px;
         &:nth-child(2n){
             margin-right: 0;
+        }
+        @media (max-width:767px){
+            margin-bottom: 10px;
         }
     }
     &-img{
