@@ -10,14 +10,14 @@ export default function ImageCarousel({ images }) {
     dots: true,
     slidesToShow:3,
     arrows: true,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     lazyLoad: true,
     responsive: [
       {
         breakpoint: 1249,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           arrows:false
         }
       },

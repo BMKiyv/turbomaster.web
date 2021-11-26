@@ -2,37 +2,55 @@
     {
         "id": 0,
         "src": "./images/carousel1.jpg",
-        "alt": "dog1"
+        "alt": "turbina1"
 
     },
     {
         "id": 1,
         "src": "./images/carousel2.jpg",
-        "alt": "dog2"
+        "alt": "turbina2"
 
     },
     {
         "id": 2,
         "src": "./images/carousel3.jpg",
-        "alt": "dog3"
+        "alt": "turbina3"
 
     },
     {
         "id": 3,
         "src": "./images/carousel4.jpg",
-        "alt": "dog4"
+        "alt": "turbina4"
 
     },
     {
         "id": 4,
         "src": "./images/carousel5.jpg",
-        "alt": "dog5"
+        "alt": "turbina5"
 
     },
     {
         "id": 5,
         "src": "./images/carousel6.jpg",
-        "alt": "dog6"
+        "alt": "turbina6"
+
+    },
+    {
+        "id": 6,
+        "src": "./images/carousel7.png",
+        "alt": "turbina7"
+
+    },
+    {
+        "id": 7,
+        "src": "./images/carousel8.jpg",
+        "alt": "turbina8"
+
+    },
+    {
+        "id": 8,
+        "src": "./images/carousel9.jpg",
+        "alt": "turbina9"
 
     }
 ]
