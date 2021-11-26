@@ -35,10 +35,10 @@ const Offer = () => {
                 setTitle(item.phrase)
                 //console.log(title);
             }
-            const addingClasses=() => {
+            const addingClasses=(i) => {
                 //console.log(window.innerWidth);
                 let theWidth = window.innerWidth>1024? window.innerWidth>1250?'612px':'470px':'100vw';
-                let theHeight = window.innerWidth>1024? '366px':'343px';
+                let theHeight = window.innerWidth>1024? '366px':i===1?'382px':i===3?'367px':'343px';
                 //console.log(theWidth,theHeight);
                 return {
                     "backgroundImage":`url(./images/turbins${index+1}.png)`,
@@ -56,7 +56,7 @@ const Offer = () => {
             } 
             return (
                 <div key = {index} className = 'offer-wrap'>
-                    <div style = {addingClasses()}>
+                    <div style = {addingClasses(index)} className='offer-div'>
                     <h3 className = 'offer-header'>{item.phrase}</h3>
                     <ul className = 'offer-list'>{item.list.map(handlingList)}</ul>
                     <div className = 'offer-button' onClick = {theTitle}>

@@ -68,25 +68,36 @@
     }
     & li button{
         display: block;
-        width: 85px;
-        height: 10px;
-        padding: 5px;
+        width: 43px;
+        height: 5px;
+        padding: 3px;
         margin: 5px;
         cursor: pointer;
         color: transparent;
         border: 0;
         outline: none;
-        background: var(--grey-color);
+        background: #DFDFDF;
+        @media (max-width:767px){
+            display: block;
+            width: 15%;
+            height: 6px;
+            padding: 0px 10px;
+        }
     }
 }
 .slick-dots li {
     position: relative;
     display: inline-block;
-    width: 85px;
-    height: 9px;
+    width: 43px;
+    height: 5px;
     margin: 0 5px;
     padding: 0;
     cursor: pointer;
+    @media (max-width:767px){
+        width: 4%;
+        height: 5px;
+        padding: 0;
+    }
 }
 .slick-dots li.slick-active > button{
     background: var(--red-color);

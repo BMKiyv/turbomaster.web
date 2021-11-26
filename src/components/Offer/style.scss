@@ -25,6 +25,12 @@
         @media (max-width:767px){
             margin-bottom: 10px;
         }
+        &:nth-last-of-type(3) div ul li{
+            margin-bottom: 20px;
+        }
+    }
+    &-div{
+        background-color: rebeccapurple;
     }
     &-img{
         max-width: 612px;
@@ -40,6 +46,7 @@
         line-height: 40px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
+        margin: 40px 0 0 0;
         @media (max-width:767px){
             top: 0;
             left: var(--mobile);
@@ -71,24 +78,28 @@
     &-list{
         position: absolute;
         left: 20px;
-        /* bottom: 85px; */
         top: 102px;
         list-style-type: square;
         width: 75%;
+        margin: 0;
         @media (max-width:767px){
-            top:75px;
-            left: calc((100vw - 344px)/4);
-       
+            top:98px;
+            padding-left: calc((100vw - 354px)/2);  
+            margin: 0;
         }
         &-item{
             color: var(--white-color);
             font-size: 16px;
             line-height: 26px;
             font-weight: bold;
+            @media (max-width:767px){
+                line-height: 25px;
+            }
         }
         &-li{
             color: var(--red-color);
-            margin-bottom: 4px;
+            margin-bottom: 5px;
         }
+
     }
 }

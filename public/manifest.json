@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Turbomaster",
+  "name": "turbomaster.if.ua",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,15 +8,36 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo.png",
+      "src": "logo16.png",
       "type": "image/png",
-      "sizes": "20x6"
+      "sizes": "16x16"
+    },
+    {
+      "src": "logo32.png",
+      "type": "image/png",
+      "sizes": "32x32"
     },
     {
       "src": "ilogo.png",
       "type": "image/png",
       "sizes": "64x64"
+    },
+    {
+      "src": "logo-share.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "20x6"
     }
+
   ],
   "start_url": ".",
   "display": "standalone",

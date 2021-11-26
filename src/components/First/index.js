@@ -11,7 +11,7 @@ const First = () => {
                 <div className = 'first-headers'>                
                 <h1 className = 'first-header'>
                     <span className = 'first-span'>Науково-технічні підприємства</span>
-                    по ремонту та продажу турбокомпресорів
+                    по ремонту та продажу <span className = 'first-span-second'>турбокомпресорів</span>
                 </h1>
                 </div>
                 <Form />
