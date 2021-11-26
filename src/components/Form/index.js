@@ -10,7 +10,7 @@ import './style.scss';
 
 const Form = ({fromModal = false,title}) => {
 const[sent,setSent] = useState(false);
-const [disabling,setDisabling] = useState(true);
+const [disabling,setDisabling] = useState(false);
 const[submit,setSubmit] = useState(false);
 const[error,setError] = useState(false);
 const [formData, setFormData] = useState({
@@ -31,6 +31,7 @@ const closeModal = () => {
 // }
 
 let onChange = ({ target }) => {
+    setDisabling(true)
     let targetName = target.name,
         targetValue = target.value;
         let name,phone;
@@ -131,7 +132,7 @@ const renderModal = () =>{
         return (
             <Modal isModal fromModal = {fromModal}>
                 <GeneralModal success onClose = {fromModal?null:closeModal}>
-                    <SendingError  title={title?title:'Заявку'}>
+                    <SendingError >
                         <Button to='/#home' message='Закрити' onClick={closeModal} />
                     </SendingError>
                 </GeneralModal>

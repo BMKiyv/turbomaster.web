@@ -61,7 +61,7 @@ const Offer = () => {
                     <ul className = 'offer-list'>{item.list.map(handlingList)}</ul>
                     <div className = 'offer-button' onClick = {theTitle}>
                         <Button onClick = {renderForm} />
-                        <span className = 'offer-button-span'>от 2500 грн.</span>
+                        <span className = 'offer-button-span'>від 2500 грн.</span>
                     </div>
                     </div>
                     {/* <img className = 'offer-img' src = {item.src} alt = {item.src} /> */}

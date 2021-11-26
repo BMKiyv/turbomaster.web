@@ -1,17 +1,17 @@
 .success{
     padding: 15px;
     background: white;
-    min-height: 438px;
+    min-height: 455px;
     @media (min-width:768px){
         padding: 40px;
     }
     @media (min-width:1024px){
-        padding: 55px;
+        padding: 55px 55px 40px;
     }
     &-title{
         font-size: 50px;
         line-height: 35px;
-        text-align: left;
+        text-align: center;
         @media (min-width:768px){
             font-weight: bold;
             font-size: 42px;
@@ -19,10 +19,8 @@
         }
     }
     &-first{
-        padding-top: 10px;
-        //  @media (min-width:768px){
-        //      padding-top:30px;
-        //  }
+        padding-top: 25px;
+        text-align: center;
     }
     &-second{
         font-style: italic;
@@ -35,7 +33,7 @@
             font-weight: 600;
             padding-bottom: 30px;
             padding-top: 20px;
-            text-align: left;
+            text-align: center;
         }
     }
     &-third{
@@ -44,7 +42,8 @@
     //padding-bottom: 20px;
     }
     &-fourth{
-        padding-bottom: 30px;  
+        padding-bottom: 100px;  
+        text-align: center;
     }
     // & p:not(:last-child) {
     //     margin-bottom: 30px;
