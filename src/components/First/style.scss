@@ -21,14 +21,14 @@
     }
     &-headers{
         width:60%;
-        margin-top: 112px;
+        margin-top: 70px;
         @media (max-width:767px){
             width: 100%;
-            margin-top: 64px;
+            margin-top: 40px;
         }
         @media (min-width:768px) and (max-width:1023px){
             width: 100%;
-            margin-top: 56px;
+            margin-top: 50px;
             text-align: center;
         }
     }
@@ -37,16 +37,20 @@
         font-family: PT Sans Narrow;
         font-style: normal;
         font-weight: 700;
-        font-size: 90px;
+        font-size: 58px;
         line-height: 80px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         @media (max-width:767px){
-            font-size: 40px;
+            font-size: 38px;
             line-height: 44px;
             font-weight: bold;
             text-align: center;
         }
+         @media (min-width:768px) and (max-width:1023px){
+            font-size: 56px;
+            line-height: 69px;
+         }
     }
     &-span{
         display: inline-block;
