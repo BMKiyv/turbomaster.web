@@ -8,7 +8,7 @@ import SendingDone from '../modal/templatesModal/sendingDone';
 import SendingError from '../modal/templatesModal/sendingError';
 import './style.scss';
 
-const Form = ({fromModal = false,title = 'Просто дізнатись'}) => {
+const Form = ({fromModal = false,title = 'Дізнатись ціну'}) => {
 const[sent,setSent] = useState(false);
 const [disabling,setDisabling] = useState(false);
 const[submit,setSubmit] = useState(false);
@@ -81,6 +81,7 @@ let sendMail = (event) =>{
 
     newData.nameInvalid = name;
     newData.phoneInvalid = phone;
+    newData.subject = formData.subject ==='Дізнатись ціну'? 'Просто дізнатись': 'Дізнатись ціну';
 
     if (!name && !phone) {
         const dataForSend = {
