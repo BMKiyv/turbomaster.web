@@ -9,7 +9,7 @@ import GeneralModal from '../modal/generalModal';
 const Offer = () => {
     const [isModal, setIsModal] = useState(false);
     const [title,setTitle] = useState('')
-    const[width,setWidth] = useState('')
+    const[width,setWidth] = useState(window.innerWidth)
 
     const renderForm = () => {
         setIsModal(true)
@@ -39,7 +39,7 @@ const Offer = () => {
     useEffect(() => {
          window.addEventListener('resize', getWidth);
         return ( ()=> window.removeEventListener('resize',getWidth))},[getWidth])
-        // console.log(width);
+         console.log(width);
     const renderOffer = () => {
 
         const handlingRender = (item,index) => {
