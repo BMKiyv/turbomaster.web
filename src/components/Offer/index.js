@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect, useCallback } from 'react';
 import './style.scss';
 import imagesTitles from '../../jsons/offer.json';
 import Button from '../Button/index';
@@ -9,37 +9,47 @@ import GeneralModal from '../modal/generalModal';
 const Offer = () => {
     const [isModal, setIsModal] = useState(false);
     const [title,setTitle] = useState('')
+    const[width,setWidth] = useState('')
+
     const renderForm = () => {
         setIsModal(true)
-        //console.log('clicked',isModal);
-
     }
+
     const closeModal = () => {
         setIsModal(false)
     }
+
     const hundlingForm = () => {
         return (
             <>
             <Modal isModal = {isModal} classSuccess>
                 <GeneralModal onClose = {closeModal}>
-                <Form fromModal = {true} title ={title}/>
+                    <Form fromModal = {true} title ={title}/>
                 </GeneralModal>
             </Modal>    
             </>
         )
 
     }
+
+    const getWidth = useCallback(
+        event => setWidth(window.innerWidth)
+    ,[])
+
+    useEffect(() => {
+         window.addEventListener('resize', getWidth);
+        return ( ()=> window.removeEventListener('resize',getWidth))},[getWidth])
+        // console.log(width);
     const renderOffer = () => {
+
         const handlingRender = (item,index) => {
             const theTitle = () => {
                 setTitle(item.phrase)
-                //console.log(title);
             }
+
             const addingClasses=(i) => {
-                //console.log(window.innerWidth);
-                let theWidth = window.innerWidth>1024? window.innerWidth>1250?'612px':'470px':'100vw';
-                let theHeight = window.innerWidth>1024? '366px':i===1?'382px':i===3?'367px':'343px';
-                //console.log(theWidth,theHeight);
+                let theWidth = width>1024? window.innerWidth>1250?'612px':'470px':'100vw';
+                let theHeight = width>1024? '366px':i===1?'382px':i===3?'367px':'343px';
                 return {
                     "backgroundImage":`url(./images/turbins${index+1}.png)`,
                     'width':theWidth,

@@ -8,7 +8,7 @@ import SendingDone from '../modal/templatesModal/sendingDone';
 import SendingError from '../modal/templatesModal/sendingError';
 import './style.scss';
 
-const Form = ({fromModal = false,title}) => {
+const Form = ({fromModal = false,title = 'Просто дізнатись'}) => {
 const[sent,setSent] = useState(false);
 const [disabling,setDisabling] = useState(false);
 const[submit,setSubmit] = useState(false);
@@ -17,6 +17,7 @@ const [formData, setFormData] = useState({
     name: '',
     phone: '',
     comment:'',
+    subject: title,
     nameInvalid:null,
     phoneInvalid:null,
 });
@@ -24,11 +25,6 @@ const [formData, setFormData] = useState({
 const closeModal = () => {
     setSent(false)
 }
-
-// const closeFromModal = () => {
-//     if(toggleModal) return toggleModal
-//     else return null
-// }
 
 let onChange = ({ target }) => {
     setDisabling(true)
@@ -59,19 +55,19 @@ useEffect(()=> {
 if(formData.name && formData.phone && !formData.nameInvalid && !formData.phoneInvalid){
     setSubmit(true)
      setDisabling(false)
+     console.log(formData);
 }
 else {
     setSubmit(false)
      setDisabling(true)
 }},[formData])
 
-//console.log(formData);
-
 const resetInput = () => {
     setFormData({
         name: '',
         phone: '',
         comment: '',
+        subject:title,
         nameInvalid:null,
         phoneInvalid:null,
     })
@@ -90,9 +86,10 @@ let sendMail = (event) =>{
         const dataForSend = {
             name:newData.name,
             phone:newData.phone,
-            comment:newData.comment
+            comment:newData.comment,
+            subject:newData.subject
         }
-        //console.log(dataForSend,'ready for sending');
+        console.log(dataForSend,'ready for sending');
           event.preventDefault();
         return  axios.post("https://turbomaster.if.ua/send.php", dataForSend)
         .then(res => {
