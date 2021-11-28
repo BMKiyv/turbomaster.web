@@ -5,9 +5,9 @@ $name = $_POST["name"];
 $phone = $_POST["phone"];
 $service = $_POST["subject"];
 $comment = $_POST["comment"];
-$mail = "turbomaster.if.ua";
+$mail = "turbomaster";
 
-$to = "k1brusenets@gmail.com";
+$to = "turbomasster@gmail.com";
 
 $subject = "Заявка з сайта";
 $message = "

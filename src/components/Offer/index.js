@@ -39,7 +39,7 @@ const Offer = () => {
     useEffect(() => {
          window.addEventListener('resize', getWidth);
         return ( ()=> window.removeEventListener('resize',getWidth))},[getWidth])
-         console.log(width);
+         //console.log(width);
     const renderOffer = () => {
 
         const handlingRender = (item,index) => {

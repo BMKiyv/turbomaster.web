@@ -12,7 +12,7 @@ const First = () => {
                 <h1 className = 'first-header'>
                     {/* <span className = 'first-span'>Ремонт</span>
                     та діагностика <span className = 'first-span-second'>турбін</span> */}
-                    Провідне підприємство з ремонту турбін на сертифікованому обладнанні <span className = 'first-span'> всього за один день!</span>
+                    ремонт та діагностика турбін будь-якої складності, на професійному обладнанні <span className = 'first-span'> всього за один день!</span>
                 </h1>
                 </div>
                 <Form />
