@@ -5,7 +5,7 @@ $name = $_POST["name"];
 $phone = $_POST["phone"];
 $service = $_POST["subject"];
 $comment = $_POST["comment"];
-$mail = "turbomaster";
+$mail = "info@turbomaster.if.ua";
 
 $to = "turbomasster@gmail.com";
 

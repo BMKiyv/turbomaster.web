@@ -81,7 +81,7 @@ let sendMail = (event) =>{
 
     newData.nameInvalid = name;
     newData.phoneInvalid = phone;
-    newData.subject = formData.subject ==='Дізнатись ціну'? 'Просто дізнатись': 'Дізнатись ціну';
+    newData.subject = formData.subject ==='Дізнатись ціну'? 'Просто дізнатись': formData.subject;
 
     if (!name && !phone) {
         const dataForSend = {
