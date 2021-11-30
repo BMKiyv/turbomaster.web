@@ -8,7 +8,7 @@ import SendingDone from '../modal/templatesModal/sendingDone';
 import SendingError from '../modal/templatesModal/sendingError';
 import './style.scss';
 
-const Form = ({fromModal = false,title = 'Дізнатись ціну'}) => {
+const Form = ({fromModal = false,title = 'Дізнатись ціну',path}) => {
 const[sent,setSent] = useState(false);
 const [disabling,setDisabling] = useState(false);
 const[submit,setSubmit] = useState(false);
@@ -95,7 +95,8 @@ let sendMail = (event) =>{
         return  axios.post("https://turbomaster.if.ua/send.php", dataForSend)
         .then(res => {
             if(res.status===200){
-                //closeFromModal()
+                path.replace('thank-you-page')
+                console.log(path);
                 resetInput()
                 setSent(true)
                 setError(false)
@@ -103,7 +104,9 @@ let sendMail = (event) =>{
             }
         })
         .catch(()=>{
-            //closeFromModal()
+            
+            path.replace('error-page')
+            console.log(path.location.pathname);
             resetInput()
             setError(true)
             setSent(true)

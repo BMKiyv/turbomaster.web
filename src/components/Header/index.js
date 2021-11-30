@@ -27,8 +27,8 @@ const Header = ({fromFooter}) => {
             </nav>
            {mobileNav?<div className = 'navigation-but'><Button nav message = 'Задати питання' onClick={closeMobileNav}/></div>:null}
             <div className = {mobileNav?'header-phones-mobile':fromFooter?'header-phones-down':'header-phones'}>
-                <a href = 'tel:+380676481631' className = {fromFooter?'header-phone-down':'header-phone'}>067 648-16-31</a>
-                <a href = 'tel:+380503751785' className = {fromFooter?'header-phone-down':'header-phone'}>050 375-17-85</a>
+                <a href = 'tel:+380962657550' className = {fromFooter?'header-phone-down':'header-phone'}>096 265-75-50</a>
+                <a href = 'tel:+380950970673' className = {fromFooter?'header-phone-down':'header-phone'}>095 097-06-73</a>
             </div>
 
             <div className={mobileNav?'navigation':fromFooter?'navigation-nonVisible':'navigation-mobileButton'}>

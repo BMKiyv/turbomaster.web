@@ -8,12 +8,12 @@ import AboutUs from '../AboutUs';
 import PhotoGalerry from '../Photogalerry';
 
 
-  const Home = () => {
+  const Home = ({path}) => {
     return(
       <div className="App">
-        <First />
+        <First path = {path}/>
         <WhyWe />
-        <Offer />
+        <Offer path = {path}/>
         <AboutUs />
         <PhotoGalerry />
         <Contacts />
