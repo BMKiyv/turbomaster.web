@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {HashLink} from 'react-router-hash-link';
-import Button from '../Button/index';
+import Button from '../../components/Button/index';
 import './style.scss';
 
 const Header = ({fromFooter}) => {
@@ -16,7 +16,7 @@ const Header = ({fromFooter}) => {
         }
     return(
         <div className = {mobileNav?'header-wrap-mobile':fromFooter?'header-wrap-down':'header-wrap'}>
-            <HashLink to ='/#main' style={{'display':'inlineBlock'}} onClick={mobileNav?closeMobileNav:null}><img className = {mobileNav?'header-img-mobile':fromFooter?'header-img-down':'header-img'} src = './images/logo.svg' alt = 'logo'/></HashLink>
+            <HashLink to ='/#main' style={{'display':'inlineBlock'}} onClick={mobileNav?closeMobileNav:null}><img className = {mobileNav?'header-img-mobile':fromFooter?'header-img-down':'header-img'} src = './images/logo.svg' alt = 'turbo master'/></HashLink>
             <nav className = {mobileNav?'header-list-mobile':'header-list'}>
                 <HashLink to ='/#main' smooth onClick={closeMobileNav} className = {mobileNav?'header-list-item-mobile':'header-list-item'}>Головна</HashLink>
                 <HashLink to ='/#whywe' smooth onClick={closeMobileNav} className = {mobileNav?'header-list-item-mobile':'header-list-item'}>Чому ми</HashLink>

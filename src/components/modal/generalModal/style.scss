@@ -24,7 +24,7 @@
       .text{
         text-align: left;
       height: 80%;
-      overflow: auto;
+      overflow: hidden;
       @media (min-width:768px) and (max-width:1023px){
         width: 500px;
       }

@@ -4,11 +4,11 @@ import Header from '../Header';
 
 const Footer = () => {
     return (
-        <div className = 'footer'>
+        <footer className = 'footer'>
             <div className = 'container footer-wrap'>
                 <Header fromFooter/>
             </div>
-        </div>
+        </footer>
 
     )
 }

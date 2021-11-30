@@ -7,6 +7,7 @@
     }
     @media (min-width:1024px){
         padding: 55px 55px 40px;
+        max-width: 400px;
     }
     &-title{
         font-size: 50px;
@@ -15,7 +16,8 @@
         @media (min-width:768px){
             font-weight: bold;
             font-size: 42px;
-            line-height: 40px;
+            line-height: 45px;
+            margin-bottom: 68px;
         }
     }
     &-first{

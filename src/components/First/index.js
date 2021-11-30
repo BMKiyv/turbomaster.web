@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header/index'
+import Header from '../../layout/Header/index'
 import Form from '../Form/index'
 import './style.scss'
 
@@ -7,7 +7,7 @@ const First = ({path}) => {
     return (
         <div className = 'first-wrap' id = 'main'>
             <div className = 'container first-position'>
-                <Header />
+                <header><Header /></header>
                 <div className = 'first-headers'>                
                 <h1 className = 'first-header'>
                     {/* <span className = 'first-span'>Ремонт</span>

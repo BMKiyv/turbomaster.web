@@ -6,7 +6,7 @@ import Form from '../Form/index';
 import Modal from '../modal/index';
 import GeneralModal from '../modal/generalModal';
 
-const Offer = () => {
+const Offer = ({path}) => {
     const [isModal, setIsModal] = useState(false);
     const [title,setTitle] = useState('')
     const[width,setWidth] = useState(window.innerWidth)
@@ -24,7 +24,7 @@ const Offer = () => {
             <>
             <Modal isModal = {isModal} classSuccess>
                 <GeneralModal onClose = {closeModal}>
-                    <Form fromModal = {true} title ={title}/>
+                    <Form path = {path} fromModal = {true} title ={title}/>
                 </GeneralModal>
             </Modal>    
             </>

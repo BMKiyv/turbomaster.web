@@ -2,10 +2,11 @@ import React, {useState,useEffect} from 'react';
 import Button from '../Button/index';
 import isInvalid from '../../utils/isInvalid';
 import axios from 'axios';
-import Modal from '../modal/index';
-import GeneralModal from '../modal/generalModal/index';
-import SendingDone from '../modal/templatesModal/sendingDone';
-import SendingError from '../modal/templatesModal/sendingError';
+//import Modal from '../modal/index';
+//import GeneralModal from '../modal/generalModal/index';
+//import SendingDone from '../modal/templatesModal/sendingDone';
+//import SendingError from '../modal/templatesModal/sendingError';
+import Thanks from '../../pages/Thanks/index'
 import './style.scss';
 
 const Form = ({fromModal = false,title = 'Дізнатись ціну',path}) => {
@@ -24,6 +25,8 @@ const [formData, setFormData] = useState({
 
 const closeModal = () => {
     setSent(false)
+    path.replace('/')
+    console.log(path.location.pathname);
 }
 
 let onChange = ({ target }) => {
@@ -95,7 +98,7 @@ let sendMail = (event) =>{
         return  axios.post("https://turbomaster.if.ua/send.php", dataForSend)
         .then(res => {
             if(res.status===200){
-                path.replace('thank-you-page')
+                path.replace('thank-you-page.html')
                 console.log(path);
                 resetInput()
                 setSent(true)
@@ -105,11 +108,12 @@ let sendMail = (event) =>{
         })
         .catch(()=>{
             
-            path.replace('error-page')
+            path.replace('error-page.html')
             console.log(path.location.pathname);
             resetInput()
             setError(true)
             setSent(true)
+            
            
         })
     } else {
@@ -121,23 +125,25 @@ let sendMail = (event) =>{
 const renderModal = () =>{
     if(sent && !error){
     return (
-        <Modal isModal fromModal = {fromModal}onClose = {fromModal?null:closeModal}>
-            <GeneralModal success>
-                <SendingDone>
-                    <Button to='/#home' message='Закрити' onClick={closeModal} />
-                </SendingDone>
-            </GeneralModal>
-        </Modal>
+        // <Modal isModal fromModal = {fromModal}onClose = {fromModal?null:closeModal}>
+        //     <GeneralModal success>
+        //         <SendingDone>
+        //             <Button to='/#home' message='Закрити' onClick={closeModal} />
+        //         </SendingDone>
+        //     </GeneralModal>
+        // </Modal>
+        <Thanks success onClick={closeModal} fromModal = {fromModal} onClose = {fromModal?null:closeModal}/>
     )}
     if(sent && error){
         return (
-            <Modal isModal fromModal = {fromModal}>
-                <GeneralModal success onClose = {fromModal?null:closeModal}>
-                    <SendingError >
-                        <Button to='/#home' message='Закрити' onClick={closeModal} />
-                    </SendingError>
-                </GeneralModal>
-            </Modal>
+            // <Modal isModal fromModal = {fromModal}>
+            //     <GeneralModal success onClose = {fromModal?null:closeModal}>
+            //         <SendingError >
+            //             <Button to='/#home' message='Закрити' onClick={closeModal} />
+            //         </SendingError>
+            //     </GeneralModal>
+            // </Modal>
+            <Thanks success = {false} onClick={closeModal} fromModal = {fromModal} onClose = {fromModal?null:closeModal}/>
         )
     }
 }
