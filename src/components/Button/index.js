@@ -2,11 +2,11 @@ import React from 'react';
 import {HashLink} from 'react-router-hash-link';
 import './style.scss';
 
-const Button = ({message, submit, disabling, onClick, nav}) => {
+const Button = ({message, submit, disabling, onClick, nav,to}) => {
     
     return (nav?
         <div className = 'button-wrap'>
-            <HashLink to = '/#form' className = 'button button-link' onClick={onClick}>{message}</HashLink>
+            <HashLink to = {to?to:'/#form'} className = 'button button-link' onClick={onClick}>{message}</HashLink>
         </div>
         :
         <div className = 'button-wrap'>{
