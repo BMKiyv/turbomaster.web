@@ -12,6 +12,10 @@
         display: block;
         padding: 35px var(--mobile) 35px;
     }
+    @media (max-width:350px){
+        padding: 35px var(--iphone) 35px;
+        max-width: 310px;
+    }
     @media (min-width:768px) and (max-width:1023px){
         top: 433px;
         left: calc((100% - 500px)/2);
@@ -60,6 +64,9 @@
         @media (max-width:767px){
             width:344px;
         }
+        @media (max-width:350px){
+            width:310px;
+        }
         @media (min-width:768px) and (max-width:1023px){
             width: 450px;
         }
@@ -75,6 +82,9 @@
         @media (max-width:767px){
             width:344px;
         }
+        @media (max-width:350px){
+            width:310px;
+        }
         @media (min-width:768px) and (max-width:1023px){
             width: 450px;
         }
@@ -83,6 +93,9 @@
         width: 318px;
         @media (max-width:767px){
             width:344px;
+        }
+        @media (max-width:350px){
+            width:310px;
         }
         @media (min-width:768px) and (max-width:1023px){
             width: 450px;

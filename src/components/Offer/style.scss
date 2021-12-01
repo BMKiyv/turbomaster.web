@@ -48,6 +48,10 @@
             top: 0;
             left: var(--mobile);
         }
+                @media (max-width:350px){
+            top: 0;
+            left: var(--iphone);
+        }
 
     }
     &-h2{
@@ -63,6 +67,10 @@
         @media (max-width:767px){
             bottom: 25px;
             left: var(--mobile);
+        }
+        @media (max-width:350px){
+            bottom: 25px;
+            left: var(--iphone);
         }
         &-span{
             color: var(--white-color);

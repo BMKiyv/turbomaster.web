@@ -15,6 +15,11 @@
             height: 344px;
             padding: 0 var(--mobile);
         }
+        @media (max-width:350px){
+            width: 310px;
+            height: 310px;
+            padding: 0 var(--iphone);
+        }
         @media (min-width:768px) and (max-width:1023px){
             width: 368px;
         } 

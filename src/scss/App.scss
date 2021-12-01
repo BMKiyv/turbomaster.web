@@ -22,6 +22,10 @@ margin: 0px;
   margin: 0 0 0 var(--mobile);
   font-size: 34px;
 }
+@media (max-width:350px){
+  margin: 0 0 0 var(--iphone);
+  font-size: 34px;
+}
 @media (min-width:768px) and (max-width:1023px){
   //margin: 0 0 0 var(--mobile);
   text-align: center;

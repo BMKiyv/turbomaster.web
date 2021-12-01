@@ -48,6 +48,10 @@
             margin: 0 0 0 var(--mobile);
             max-width: 170px;
         }
+        @media (max-width:350px){
+            margin: 0 0 0 var(--iphone);
+            max-width: 160px;
+        }
         @media (min-width:768px) and (max-width:1023px){
             margin: 0 0 0 var(--planshet);
             max-width: 170px;
@@ -55,6 +59,10 @@
         &-mobile{
             margin: 20px var(--mobile);
             max-width: 170px;
+            @media (max-width:350px){
+                margin: 20px var(--iphone);
+                max-width: 160px;
+            }
             @media (min-width:768px) and (max-width:1023px){
                 margin: 30px var(--planshet);
             }
@@ -147,6 +155,9 @@
             flex-direction: column;
              align-items: center;
              margin-top: 40px;
+             @media (max-width:350px){
+                margin-top: 10px;
+             }
              @media (min-width:768px) and (max-width:1023px){
                 margin-top: 89px;
              }
@@ -180,6 +191,9 @@
                             &:hover{
                 color:var(--red-color);
                 text-decoration: underline;
+            }
+            @media (max-width:350px){
+                line-height: 50px;
             }
             @media (min-width:768px) and (max-width:1023px){
                 margin-bottom: 20px;
@@ -296,6 +310,9 @@ a:active{
     position: absolute;
     top: 35px;
     right: var(--mobile);
+    @media (max-width:350px){
+        right: var(--iphone);
+    }
     @media (min-width:1024px) {
         display: none;           
     }
@@ -305,6 +322,9 @@ a:active{
      }
     &-but{
         margin: 43px var(--mobile) 35px;
+        @media (max-width:350px){
+            margin: 10px var(--iphone) 35px;
+        }
         @media (min-width:768px) and (max-width:1023px){
             margin: 127px var(--mobile) 35px;
         }
@@ -318,6 +338,9 @@ a:active{
         display: inline-block;
         margin: 23px 15px 0 0;
         @media (min-width:320px) {
+            margin: 14px var(--iphone) 0 0;
+        }
+        @media (min-width:350px) {
             margin: 14px var(--mobile) 0 0;
         }
         @media (min-width:768px){
