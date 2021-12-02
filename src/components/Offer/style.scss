@@ -24,6 +24,7 @@
         }
         @media (max-width:767px){
             margin-bottom: 10px;
+            width: 100%;
         }
         &:nth-last-of-type(3) div ul li{
             margin-bottom: 20px;
@@ -112,7 +113,7 @@
         height: 366px;
         background-color: var(--grey-color);
         @media (max-width:1023px){
-            width:100wv;
+            width:100vw;
             height: 343px;
         }
     }

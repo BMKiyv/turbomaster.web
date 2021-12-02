@@ -18,7 +18,7 @@ const WhyWE = () => {
         }
          setCards(whywe.map(hundlingWhy))
     },[setCards,visible])
-    console.log(cards);
+    //console.log(cards);
     const renderWhy = useCallback(()=>{
         const loop = (item,index) =>{
             return (
