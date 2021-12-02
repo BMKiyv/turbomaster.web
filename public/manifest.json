@@ -4,36 +4,46 @@
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "64x64",
       "type": "image/x-icon"
     },
     {
-      "src": "logo16.png",
-      "type": "image/png",
+      "src": "favicon32.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon16.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./images/logos/logo16.jpg",
+      "type": "image/jpg",
       "sizes": "16x16"
     },
     {
-      "src": "logo32.png",
-      "type": "image/png",
+      "src": "./images/logos/logo32.jpg",
+      "type": "image/jpg",
       "sizes": "32x32"
     },
     {
-      "src": "ilogo.png",
+      "src": "./images/logos/ilogo.png",
       "type": "image/png",
       "sizes": "64x64"
     },
     {
-      "src": "logo-share.png",
+      "src": "./images/logos/logo-share.png",
       "type": "image/png",
       "sizes": "200x200"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "./images/logos/logo512.jpg",
+      "type": "image/jpg",
       "sizes": "512x512"
     },
     {
-      "src": "logo.png",
+      "src": "./images/logos/logo.png",
       "type": "image/png",
       "sizes": "20x6"
     }
@@ -41,6 +51,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#e5e5e5",
   "background_color": "#ffffff"
 }

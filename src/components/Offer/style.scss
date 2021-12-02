@@ -107,4 +107,13 @@
         }
 
     }
+    &-visiblity{
+        width:612px;
+        height: 366px;
+        background-color: var(--grey-color);
+        @media (max-width:1023px){
+            width:100wv;
+            height: 343px;
+        }
+    }
 }

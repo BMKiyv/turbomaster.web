@@ -5,11 +5,15 @@ import Button from '../Button/index';
 import Form from '../Form/index';
 import Modal from '../modal/index';
 import GeneralModal from '../modal/generalModal';
+import { useOnScreen } from '../../utils/useOnscreen';
 
 const Offer = ({path}) => {
     const [isModal, setIsModal] = useState(false);
     const [title,setTitle] = useState('')
     const[width,setWidth] = useState(window.innerWidth)
+    const [myRef,visible] = useOnScreen({})
+    const [cards,setCards] = useState([])
+
 
     const renderForm = () => {
         setIsModal(true)
@@ -40,7 +44,7 @@ const Offer = ({path}) => {
          window.addEventListener('resize', getWidth);
         return ( ()=> window.removeEventListener('resize',getWidth))},[getWidth])
          //console.log(width);
-    const renderOffer = () => {
+    useEffect( () => {
 
         const handlingRender = (item,index) => {
             const theTitle = () => {
@@ -65,26 +69,33 @@ const Offer = ({path}) => {
                 )
             } 
             return (
+                <>
+                    <div style = {visible?addingClasses(index):null} className={visible?'offer-div':'offer-visiblity'}>
+                        <h3 className = 'offer-header'>{item.phrase}</h3>
+                        <ul className = 'offer-list'>{item.list.map(handlingList)}</ul>
+                        <div className = 'offer-button' onClick = {theTitle}>
+                            <Button onClick = {renderForm} />
+                        </div>
+                    </div>
+                </>
+            )
+        }
+        setCards(imagesTitles.map(handlingRender))
+    },[visible,setCards,width])
+    const renderOffer = useCallback(()=>{
+        const loop = (item,index) => {
+            return(
                 <div key = {index} className = 'offer-wrap'>
-                    <div style = {addingClasses(index)} className='offer-div'>
-                    <h3 className = 'offer-header'>{item.phrase}</h3>
-                    <ul className = 'offer-list'>{item.list.map(handlingList)}</ul>
-                    <div className = 'offer-button' onClick = {theTitle}>
-                        <Button onClick = {renderForm} />
-                        {/* <span className = 'offer-button-span'>від 2500 грн.</span> */}
-                    </div>
-                    </div>
-                    {/* <img className = 'offer-img' src = {item.src} alt = {item.src} /> */}
-
+                    {item}
                 </div>
             )
         }
-        return imagesTitles.map(handlingRender)
-    }
+        return cards.map(loop)
+    },[cards])
     return (
         <div className = 'container offer-top' id = 'offer'>
             <h2>Ми пропонуємо</h2>
-            <div className = 'offer'>
+            <div className = 'offer' ref = {myRef}>
                 {renderOffer()}
                 { hundlingForm() }
             </div>
