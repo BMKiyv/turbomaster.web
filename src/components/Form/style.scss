@@ -13,6 +13,7 @@
         padding: 35px var(--mobile) 35px;
     }
     @media (max-width:350px){
+        top: 576px;
         padding: 35px var(--iphone) 35px;
         max-width: 310px;
     }
